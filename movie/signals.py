@@ -14,8 +14,6 @@ mongo_movies = mongo_db["movies"]
 @receiver(post_save, sender=Movie)
 def sync_created_or_updated_movie(sender, instance, created, **kwargs):
     if created:
-        print("Created")
-        print(instance.started_at)
         # Create a new movie in MongoDB
         mongo_movies.insert_one({
             '_id': instance.id,
