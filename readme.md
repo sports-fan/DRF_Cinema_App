@@ -15,4 +15,4 @@
 
 ### Code was tested right using Pytest
 
-## Stack: Postgres | MongoDB | Celery | Redis | RabbitMQ | Django ninja.
+## Stack: Postgres | MongoDB | Celery | Redis | RabbitMQ
